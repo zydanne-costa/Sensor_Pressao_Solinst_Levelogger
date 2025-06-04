@@ -3,18 +3,20 @@
 %--------------------------------------------------------------------------
 % Autor: Zydanne Costa
 % Data: 09 de setembro de 2024
+% Atualizacao: 04 de Junho de 2025
 % Analise de Variacao de Mare - Sensor de Pressao Solinst Levelogger
 % Descricao: Este script destina-se ao tratamento e visualizacao de dados 
-% adquiridos por um sensor de pressão, com o objetivo de analisar a variacao 
-% do nivel da agua (mare). O script realiza a importacao, manipulacao e 
-% normalizacao dos dados, bem como a plotagem da variacao do nivel d'agua 
-% em funcao do tempo de forma detalhada e clara.
+% adquiridos por um sensor de pressao, com o objetivo de analisar a variacao 
+% do nivel da agua (mare). O script realiza a importacao e manipulacao dos dados, 
+% bem como a plotagem da variacao do nivel d'agua em funcao do tempo.
 %--------------------------------------------------------------------------
 % 
 %==========================================================================
-
+clear all;
+clc
+%
 data = read_solinst_csv('SCO_Mar2025.csv', 15.064);
-data = data(7:889,:);
+data = data(7:889,:); % dados dentro d'agua
 
 
 %% graficos

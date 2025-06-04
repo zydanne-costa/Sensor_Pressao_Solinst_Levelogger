@@ -18,15 +18,13 @@ data = data(7:889,:);
 
 
 %% graficos
-fig = figure(1); % criar uma fig melhora a manipulacao do grafico
-set(fig, 'Position', [30, 400, 900, 600]) % definindo a posicao e o tamano da imagem
-plot(dt, nivel, 'k', 'LineWidth', 1.1) % plot(x,y). O 'k' define a cor preta para a linha. 'LineWidth' = Expessura da linha.
-title('Variacao do nivel dagua', 'FontName', 'Times New Roman', 'FontSize', 18) % titulo
-xlabel('Tempo (dia/mes)', 'FontName', 'Times New Roman', 'FontSize', 18) % rotulo eixo x
-ylabel('Nivel (m)', 'Fontname', 'Times New Roman', 'FontSize', 18) % rotulo eixo y
-xlim([dt(1) dt(end)]) % limites do eixo x
-datetick('x', 'dd/mm', 'keeplimits', 'keepticks') % configuracoes do eixo x
-set(gca, 'FontName', 'Times New Roman'); % Define a fonte e o tamanho dos numeros dos eixos
-grid minor % grade de fundo minimalista
-
-%% fim do script
+% fig = figure(1); % criar uma fig melhora a manipulacao do grafico
+% set(fig, 'Position', [30, 400, 900, 600]) % definindo a posicao e o tamano da imagem
+% plot(dt, nivel, 'k', 'LineWidth', 1.1) % plot(x,y). O 'k' define a cor preta para a linha. 'LineWidth' = Expessura da linha.
+% title('Variacao do nivel dagua', 'FontName', 'Times New Roman', 'FontSize', 18) % titulo
+% xlabel('Tempo (dia/mes)', 'FontName', 'Times New Roman', 'FontSize', 18) % rotulo eixo x
+% ylabel('Nivel (m)', 'Fontname', 'Times New Roman', 'FontSize', 18) % rotulo eixo y
+% xlim([dt(1) dt(end)]) % limites do eixo x
+% datetick('x', 'dd/mm', 'keeplimits', 'keepticks') % configuracoes do eixo x
+% set(gca, 'FontName', 'Times New Roman'); % Define a fonte e o tamanho dos numeros dos eixos
+% grid minor % grade de fundo minimalista

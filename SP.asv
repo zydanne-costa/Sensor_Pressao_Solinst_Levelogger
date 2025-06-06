@@ -21,14 +21,13 @@ data = data(7:889,:); % dados dentro d'agua
 
 %% grafico
 fig = figure(1);
-set(fig, 'Position', [50, 150, 900, 490]);
-[hAx, hLine1, hLine2] = plotyy(data.dt, data.level, data.dt, data.temperature);
-title('Varição de Nível x Temperatura', 'FontName', 'Times New Roman', 'FontSize', 18);
-xlabel('Tempo (dia/mes)', 'FontName', 'Times New Roman', 'FontSize', 18);
-ylabel(hAx(1),'Nivel (m)', 'Fontname', 'Times New Roman', 'FontSize', 18);
-ylabel(hAx(2),'Temperatura (°C)', 'Fontname', 'Times New Roman', 'FontSize', 18);
-ylim(hAx(2),[28 29.55]);
-xlim([data.dt(1) data.dt(end)]);
-datetick('x', 'dd/mm', 'keeplimits', 'keepticks');
+set(fig, 'Position', [50, 150, 900, 490])
+[hAZ, ]plotyy(data.dt, data.level, data.dt, data.temperature)
+title('Varição de Nível x Temperatura', 'FontName', 'Times New Roman', 'FontSize', 18)
+xlabel('Tempo (dia/mes)', 'FontName', 'Times New Roman', 'FontSize', 18)
+ylabel('Nivel (m)', 'Fontname', 'Times New Roman', 'FontSize', 18)
+xlim([data.dt(1) data.dt(end)])
+% ylim([28 30])
+datetick('x', 'dd/mm', 'keeplimits', 'keepticks')
 set(gca, 'FontName', 'Times New Roman');
-grid minor;
+grid minor
